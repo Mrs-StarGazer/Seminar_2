@@ -1,7 +1,21 @@
-﻿Console.WriteLine("введите трехзначное число");
+﻿Console.WriteLine("введите число");
 int number = int.Parse(Console.ReadLine()!);
 
-int first = number / 10;
-int second = first % 10;
+if (number<0)
+{
+    number=-number;
+}
+if (number<100)
+{
+    Console.WriteLine("третей цифры нет");
+}
+else
+{
+    while (number> = 999)
+    {
+        number=number/10;
+    }
+    int thirdDigit=number%10;
+    Console.WriteLine(thirdDigit);
+}
 
-Console.Write(second);

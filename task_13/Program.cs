@@ -7,7 +7,7 @@ if (number < 0)
 }
 if (number < 100)
 {
-    Console.WriteLine("третей цифры нет");
+    Console.WriteLine("третьей цифры нет");
 }
 else
 {
